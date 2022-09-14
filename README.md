@@ -147,13 +147,15 @@ function myFunction(num1, num2) {
   return num1 + num2
 }
 
+// the function here will return 10 + 1 = 11
+
 const num1 = 10
 const num2 = 1
 const num3 = 4
 
 const result = myFunction(num3, num1)
 ```
-
+<!-- const result will read 4 due to num3 being 4 -->
 ### Q9
 What will be logged out on the console when this code rus? Why?
 
