@@ -10,7 +10,9 @@ Go through each of the questions below, one by one, using the following process:
 1. *Write down* a description of what you believe the function(s) are doing and what you think the answer to the question is. Do not skip the writing down step.
 
 2. Run the code by typing (don't copy and paste, *type* the code for this exercise) it in to a js file and running the file with `node`. Name the file based on the question name (i.e `q1.js`, `q2.js`, etc.). Add `console.log` statements to observe values where required.
+
 3. Did you answer correctly? If not, try to understand why not. What did you misunderstand about the code? **This step is crucial to this exercise. If the answer is not what you expected, do not move on until you understand why**. You can experiment with the code adding `console.log` messages to help you see what is happening. You can ask another member of the Cohort, you can look at previous exercises, online references, and of course you can ask the instructors using the support channel.
+
 4. If necessary update your written answer (keep the original!) with your updated understanding.
 5. Commit and push your updates
 6. Move on to the next question.
@@ -47,7 +49,7 @@ function myFunction(num1, num2) {
 
 const result = myFunction(5,5)
 ```
-///5 is assigned to num1 and 5 is also assigned to num2, then they are run through the return function which asks them to be added together. so I expect the output to be 10.
+<!-- 5 is assigned to num1 and 5 is also assigned to num2, then they are run through the return function which asks them to be added together. so I expect the output to be 10. -->
 
 ### Q2
 What is the value of `result` after calling this function? Why?
@@ -59,7 +61,7 @@ function myFunction(num1, num2) {
 
 const result = myFunction(5,5)
 ```
-///The input is still 5 for both num1 and 2 but there is no return before the command to add the 2 numbers together, so the expected answer would have been 10 however due to the lack of the recall command the answer will be undefined.
+<!-- The input is still 5 for both num1 and 2 but there is no return before the command to add the 2 numbers together, so the expected answer would have been 10 however due to the lack of the recall command the answer will be undefined. -->
 ### Q3
 What is the value of `num` at the end of the program? Why?
 
@@ -73,6 +75,7 @@ num = myFunction(num)
 num = myFunction(num)
 ``` 
 
+<!-- The function presented the arguement for num to give a return for num subtract '1'. the expected outcome was thought to be 9 however did not realise that a the 'let' as a changeable function would subtract multiple times therefore producing number '8'.  -->
 ### Q4
 What is the value of `add` and `num` at the end of the program? Why?
 
@@ -86,6 +89,7 @@ let add = 3
 add = myFunction(add)
 add = myFunction(add)
 ```
+I expected the outcome 9 for num-1 and on line 89 expected 12, and line 90 expected 15. Expecting 9 for num was correct though expectation for add was not 0. currently unaware of how 'add' gets its value. result = 0
 
 ### Q5
 What value will be logged inside the function call? Why?

@@ -1,6 +1,10 @@
-function myFunction(num1, num2) {
-     num1+num2
-  }
-  
-  const result = myFunction(5,5)
-  console.log(result)
+function myFunction(num) {
+   return num-1
+ }
+ 
+ let num = 10
+ let add = 3
+ add = myFunction(add)
+ add = myFunction(add)
+
+ console.log(myFunction(add))
