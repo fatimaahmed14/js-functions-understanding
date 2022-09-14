@@ -47,6 +47,7 @@ function myFunction(num1, num2) {
 
 const result = myFunction(5,5)
 ```
+///5 is assigned to num1 and 5 is also assigned to num2, then they are run through the return function which asks them to be added together. so I expect the output to be 10.
 
 ### Q2
 What is the value of `result` after calling this function? Why?
@@ -58,7 +59,7 @@ function myFunction(num1, num2) {
 
 const result = myFunction(5,5)
 ```
-
+///The input is still 5 for both num1 and 2 but there is no return before the command to add the 2 numbers together, so the expected answer would have been 10 however due to the lack of the recall command the answer will be undefined.
 ### Q3
 What is the value of `num` at the end of the program? Why?
 
