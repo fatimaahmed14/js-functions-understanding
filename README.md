@@ -89,7 +89,7 @@ let add = 3
 add = myFunction(add)
 add = myFunction(add)
 ```
-I expected the outcome 9 for num-1 and on line 89 expected 12, and line 90 expected 15. Expecting 9 for num was correct though expectation for add was not 0. currently unaware of how 'add' gets its value. result = 0
+<!-- I expected the outcome 9 for num-1 and on line 89 expected 12, and line 90 expected 15. Expecting 9 for num was correct though expectation for add was not 0. currently unaware of how 'add' gets its value. result = 0 -->
 
 ### Q5
 What value will be logged inside the function call? Why?
@@ -105,7 +105,7 @@ let num1 = 2
 myFunction(num)
 
 ```
-
+<!--There will be no value called back as the function has been given only one value to work with, therefor it can not assign/log a value.We tested this and it came back as undefined, we were correct. -->
 ### Q6
 What value will be logged inside the function call? Why?
 
@@ -119,22 +119,26 @@ let num1 = 2
 
 myFunction(num1, num)
 ```
-
+<!--The function will log undefined because the parameters are recalled in the wrong order. The results were that num1 was recalled as num instead due to their placement inside the function at the end. -->
 ### Q7
 What will the value of counter be at the end of this program? Why?
 
 ```javascript
 let counter = 1
+// counter currently equal 1 but is a variable that can be cahnged
 
 function myFunction() {
   counter++
   return counter
 }
+// funtion is made and contains counter(1) and asks to add 1 to it because of the ++.This result in counter now being eqaul to 2 and its value is asked to be returned, as 2.
 
 myFunction()
+// counter = 2
 const num = myFunction()
+// counter =3
 ```
-
+<!-- The value of counter at the end of this programme will be 2. The value of counter was actually 3 but we now know this is because of the function being run twice.-->
 ### Q8
 What will the value of `result` be at the end of this program? Why?
 
