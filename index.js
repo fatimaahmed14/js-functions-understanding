@@ -1,16 +1,9 @@
-function myFunction(num1, num2) {
-  return num1 + num2
+function myFunction(num1, num2, num3) {
+  console.log(num3)
 }
-
-// the function here will return 10 + 1 = 11
 
 const num1 = 10
 const num2 = 1
-const num3 = 4
+const num3 = 20
 
-const result = myFunction(num3, num1)
-// this line = 10 + 4
-
-
-
-console.log(myFunction(num3, num1))
+myFunction(num3, num1, 100)
