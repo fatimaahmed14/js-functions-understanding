@@ -379,9 +379,11 @@ function myFunction(num1, num2) {
 }
 
 const result = myFunction(10, 20)
+// the result will log as 30 as it is a constant.
 myFunction(100, 2)
+// this will not log as result
 ```
-
+<!-- The result was as expected -->
 ### Q22
 What will be the value of `result` when this code runs? Why?
 
@@ -394,7 +396,8 @@ function myFunction(num1, num2) {
 let result = 0
 myFunction(100, 2)
 ```
-
+<!-- I think the result willbe 102 -->
+<!-- I was not correct and the result was 0, I thought becuase it was a let not a const it would run the function line under it but I was not correct. The result did equal 0 as stated in the code -->
 ### Q23
 What will be the value of `result` when this code runs? Why?
 
@@ -406,6 +409,8 @@ function myFunction(num1, num2) {
 let result = 0
 myFunction(100, 2)
 ```
+<!-- The result will be 102 because there is no let in the function so it will use 2 parameters instead of redfining it with the let on line 409  -->
+<!-- The result was as expceted  -->
 
 ### Q24
 What will be the value of `result` when this code runs? Why?
