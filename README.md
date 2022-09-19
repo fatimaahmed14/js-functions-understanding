@@ -51,6 +51,7 @@ function myFunction(num1, num2) {
 const result = myFunction(5,5)
 ```
 <!-- 5 is assigned to num1 and 5 is also assigned to num2, then they are run through the return function which asks them to be added together. so I expect the output to be 10. -->
+<!-- The result was 10 as expected -->
 
 ### Q2
 What is the value of `result` after calling this function? Why?
@@ -64,6 +65,7 @@ function myFunction(num1, num2) {
 const result = myFunction(5,5)
 ```
 <!-- The input is still 5 for both num1 and 2 but there is no return before the command to add the 2 numbers together, so the expected answer would have been 10 however due to the lack of the recall command the answer will be undefined. -->
+<!-- The answer was undefined as expected -->
 ### Q3
 What is the value of `num` at the end of the program? Why?
 
@@ -78,6 +80,7 @@ num = myFunction(num)
 num = myFunction(num)
 // runs function again so 9 - 1 = 8
 ```
+<!-- I think the answer will be 9 as 10 - 1 = 9 -->
 <!-- The function presented the arguement for num to give a return for num subtract '1'. the expected outcome was thought to be 9 however did not realise that a the 'let' as a changeable function would subtract multiple times therefore producing number '8'.  -->
 ### Q4
 What is the value of `add` and `num` at the end of the program? Why?
@@ -95,8 +98,8 @@ add = myFunction(add)
 // would run 2 - 1 = 1
 
 ```
-<!-- Expected the outcome 9 for the num return and the out come 1 for the add return.  -->
-<!-- num logged as 10 instead of 9 due to the let variable re defining num - 1, from 9 back to 10 -->
+<!-- Expected the outcome 9 for the num return and the outcome 1 for the add return.  -->
+<!-- num logged as 10 instead of 9 due to the let variable redefining num - 1, from 9 back to 10 -->
 
 ### Q5
 What value will be logged inside the function call? Why?
@@ -112,7 +115,8 @@ let num1 = 2
 myFunction(num)
 
 ```
-<!--There will be no value called back as the function has been given only one value to work with, therefor it can not assign/log a value. We tested this and it came back as undefined. -->
+<!--There will be no value called back as the function has been given only one value to work with, therefor it can not assign/log a value. -->
+<!-- The value did indeed come out as undefined -->
 ### Q6
 What value will be logged inside the function call? Why?
 
@@ -126,8 +130,8 @@ let num1 = 2
 
 myFunction(num1, num)
 ```
-<!--The function will log undefined because the parameters are recalled in the wrong order. 
-The results were that num1 was recalled as num instead due to their placement inside the function at the end. The placement of the parameters are important in the way they are recalled. -->
+<!-- The function will log undefined because the parameters are recalled in the wrong order.  -->
+<!-- We found that num1 was recalled instead of num due to their placement inside the function at the end. The placement of the parameters are important in the way they are recalled. --> 
 
 ### Q7
 What will the value of counter be at the end of this program? Why?
@@ -147,8 +151,8 @@ myFunction()
 const num = myFunction()
 // counter =3
 ```
-<!-- The value of counter at the end of this programme will be 2. 
-The value of counter was actually 3 but we now know this is because of the function being run twice.-->
+ <!-- The value of counter at the end of this programme will be 2.  -->
+<!-- The value of counter was actually 3 but we now know this is because of the function being run twice.--> 
 ### Q8
 What will the value of `result` be at the end of this program? Why?
 
@@ -166,9 +170,8 @@ const num3 = 4
 const result = myFunction(num3, num1)
 // will run 4 + 10 = 14
 ```
-<!-- const result will read 4 due to num3 being 4 -->
-<!-- I was expecting the programme to run 14 as it should add the 4 and 10. 
-It did run 14 once I console logged result. -->
+<!-- const result will read 4 due to num3 being, I am expecting the programme to run 14 as it should add the 4 and 10. 
+<!-- It did run 14 once I console logged result. -->
 ### Q9
 What will be logged out on the console when this code runs? Why?
 
@@ -183,7 +186,8 @@ const num3 = 20
 
 myFunction(num3, num1)
 ```
-<!-- The console will log 20 as num3 is equal to 20. I am not usre exactly why it is 20, it was a guess that was correct my attempt at understnading this is maybe because num3 is only ran once so it equals 20 -->
+<!-- The console will log 20 as the const num3 = 20.
+<!-- The console did log 20 as expected -->
 
 ### Q10
 What will be logged out on the console when this code runs? Why?
@@ -216,6 +220,8 @@ const num3 = 20
 
 const result = myFunction(1, 1, 1)
 ```
+<!-- The result will be 3 as the parameters have been defined as 1 each and the functions adds them to add them together. -->
+<!-- The result was 3 as I expected-->
 
 ### Q12
 What will be the value of `result` when this code runs? Why?
@@ -223,16 +229,19 @@ What will be the value of `result` when this code runs? Why?
 ```javascript
 function getSomeValue() {
   return 2
+  // get some value will return 2
 }
 
 function myFunction(num1) {
   const num2 = getSomeValue()
   return num1 * num2
+  // this function will times 2 by 5
 }
+// the result should be 10
 
 const result = myFunction(5)
 ```
-
+<!-- The result was 10 as expected -->
 ### Q13
 What will be the value of `result` when this code runs? Why?
 
@@ -241,15 +250,17 @@ What will be the value of `result` when this code runs? Why?
 function getSomeValue() {
   return 2
 }
+// this function will return 2
 
 function myFunction(num1) {
   const num2 = getSomeValue()
   return num1 * getSomeValue()
+  // 5 * 2 = 10
 }
 
 const result = myFunction(5)
 ```
-
+<!-- the result was 10 as expected -->
 ### Q14
 What will be the value of `result` when this code runs? Why?
 
