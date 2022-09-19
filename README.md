@@ -260,7 +260,7 @@ function myFunction(num1) {
 
 const result = myFunction(5)
 ```
-<!-- the result was 10 as expected -->
+<!-- The result was 10 as expected -->
 ### Q14
 What will be the value of `result` when this code runs? Why?
 
@@ -272,10 +272,12 @@ function getSomeValue() {
 function myFunction(num1) {
   return getSomeValue() * getSomeValue()
 }
+// 2 * 2 = 4 
 
 const result = myFunction(5)
 ```
-
+<!-- I think the result will log the return for the function, so 2*2. -->
+<!-- There was a NaN logged for result, this was due to the parameter not being used or defined agaian in the function, the 5 did not log nor did the 4 from the 2*2. -->
 ### Q15
 What will be the value of `result` when this code runs? Why?
 
@@ -284,13 +286,15 @@ function myFunction(num1) {
   if(true) {
     return -10
   }
+  // 5 is true so this function = -10
 
   return num1 * 10
 }
 
 const result = myFunction(5)
 ```
-
+<!-- result will be -10 -->
+<!-- The result was as expected -->
 
 ### Q16
 What will be the value of `result` when this code runs? Why?
@@ -300,9 +304,11 @@ function myFunction(num1) {
   if(false) {
     return -100
   }
+  // num1 is true so it will not return -100
 
   return num1 * 10
 }
+// 5* 10 = 5=
 
 const result = myFunction(5)
 ```
