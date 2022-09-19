@@ -423,7 +423,8 @@ function myFunction(num1, num2) {
 
 const result = myFunction(5, 2)
 ```
-
+<!-- Unsure whether the result will be 100 as it is the value asked to be returned or if it will give 7 as the result was they are the parameters defined on line 424. -->
+<!-- The result was 100, I now know this was because it was the value that the function was asked to return -->
 ### Q25
 What will be the printed out by the console log statements when this code runs? Why?
 ```javascript
@@ -441,3 +442,6 @@ let c = 3
 
 myFunction(100)
 ```
+<!-- a = 100, b=2, c=3 -->
+<!-- The result was as expected for a and c -->
+<!-- b was equal to 20 not 2. I think this was because let was already defined in the function so when the function ran it alreadyt logged b as 20 before looking at line 440 -->
