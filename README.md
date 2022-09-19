@@ -203,7 +203,7 @@ const num3 = 20
 
 myFunction(num3, num1, 100)
 ```
-<!-- the console wil log num3 as 20 as it is a constamt that has been defined as 20. -->
+<!-- the console will log num3 as 20 as it is a constant that has been defined as 20. -->
 <!-- The console logged 100 instead of 20 and I now realise this is because 100 was placed in the place of num3 on the parameters, so the function read it as 100 as opposed to 20 -->
 
 ### Q11
@@ -308,11 +308,11 @@ function myFunction(num1) {
 
   return num1 * 10
 }
-// 5* 10 = 5=
+// 5* 10 = 50
 
 const result = myFunction(5)
 ```
-
+<!-- The result was as expected -->
 ### Q17
 What will be the value of `result` when this code runs? Why?
 
@@ -325,7 +325,8 @@ function myFunction(num1) {
 
 const result = myFunction(5)
 ```
-
+<!-- I expect the result to be -1000 as the -100 will be taken then multiplied by the 10 -->
+<!-- The result was -100 as it was the first return stated in the function, so it was the ascrbed value -->
 ### Q18
 What will be the value of `result` when this code runs? Why?
 
@@ -333,13 +334,14 @@ What will be the value of `result` when this code runs? Why?
 function myFunction(num1) {
 
   return num1 * 10
-
+// 5 * 10 = 50
   return -100
 }
 
 const result = myFunction(5)
 ```
-
+<!-- I think the result will be 50 -->
+<!-- The result was as expected -->
 ### Q19
 What will be the value of `result` when this code runs? Why?
 
@@ -349,8 +351,9 @@ function myFunction(num1, num2, num3) {
 }
 
 const result = myFunction(5, 10, 15)
+// this will return 10 as that is the number assigned to num2
 ```
-
+<!-- The result was as expected -->
 ### Q20
 What will be the value of `result` when this code runs? Why?
 
@@ -358,14 +361,14 @@ What will be the value of `result` when this code runs? Why?
 function myFunction(num1, num2, num3) {
   return num1 + num3
 }
-
+// (num1=5) + (num3= 1000) = 1005
 const num1 = 20
 const num2 = 200
 const num3 = 1000
 
 const result = myFunction(5, 10, num3, 15)
 ```
-
+<!-- The result was as expected -->
 ### Q21
 What will be the value of `result` when this code runs? Why?
 
